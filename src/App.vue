@@ -1,10 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <el-container>
+    <el-header>
+      <Navigation />
+    </el-header>
+    <el-main>
+      <router-view />
+      <el-backtop :right="100" :bottom="100" />
+    </el-main>
+    <el-footer></el-footer>
+  </el-container>
 </template>
+
+<script>
+import Navigation from '@/components/Navigation.vue';
+
+export default {
+  components: {
+    Navigation,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

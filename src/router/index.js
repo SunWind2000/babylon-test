@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import test1 from '../components/test1.vue';
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView,
+    path: '/test1',
+    name: 'test1',
+    component: test1,
   },
   {
     path: '/about',
@@ -15,6 +15,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+  },
+  {
+    path: '/',
+    redirect: 'test1',
   },
 ];
 

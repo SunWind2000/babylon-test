@@ -1,6 +1,6 @@
-# security-web
+# babylon-practice
 
-一款基于vue3脚手架vue-cli的模板仓库
+vue + babylon.js练习仓库
 
 ## Project setup
 ```

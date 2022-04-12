@@ -1,0 +1,27 @@
+{
+  // 设置文件自动保存
+  "files.autoSave": "onFocusChange",
+  // 将vetur的js格式化工具指定为vscode自带的
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  // 移除js语句的分号
+  "javascript.format.semicolons": "insert",
+  // 再函数名后自动加括号
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // eslint配置项，保存时自动修复错误
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // 保存时自动格式化代码
+  "editor.formatOnSave": true,
+  // 默认使用prettier格式化支持的文件
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 指定 *.vue 文件的格式化工具为vetur，防止和prettier冲突
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // 指定 *.js 文件的格式化工具为vscode自带，以符合ESLint规范
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}

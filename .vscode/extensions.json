@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "octref.vetur",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "aaron-bond.better-comments",
+    "formulahendry.auto-close-tag",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

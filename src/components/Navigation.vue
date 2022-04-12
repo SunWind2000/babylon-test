@@ -7,7 +7,7 @@
   >
     <!-- 动态顶部菜单栏加载 -->
     <div v-for="(item, index) in menuItems" :key="index">
-      <el-sub-menu v-if="item.children" :index="item.name" style="width: 110px">
+      <el-sub-menu v-if="item.children" :index="item.name" style="width: 145px">
         <template #title>{{ item.text }}</template>
         <div v-for="(subItem, i) in item.children" :key="index + i">
           <el-sub-menu v-if="subItem.children" :index="subItem.name">
@@ -43,3 +43,12 @@ export default {
   },
 };
 </script>
+
+<style>
+el-sub-menu {
+  min-width: fit-content;
+}
+el-menu-item {
+  min-width: 140px;
+}
+</style>

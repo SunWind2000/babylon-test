@@ -9,15 +9,15 @@ export default createStore({
       },
       {
         name: '/test2',
-        text: '练习2',
+        text: 'Build a village',
         children: [
           {
             name: '/test2-1',
-            text: '练习2-1',
+            text: 'generate ground',
           },
           {
             name: '/test2-2',
-            text: '练习2-2',
+            text: 'basic house',
           },
           {
             name: '/test2-3',
@@ -27,7 +27,7 @@ export default createStore({
       },
       {
         name: '/test3',
-        text: '练习3',
+        text: 'Animate village',
         children: [
           {
             name: '/test3-1',

@@ -21,7 +21,7 @@ export default createStore({
           },
           {
             name: '/test2-3',
-            text: '练习2-3',
+            text: 'build village',
           },
         ],
       },
